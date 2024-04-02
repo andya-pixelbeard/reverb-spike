@@ -9,3 +9,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/messages', [App\Http\Controllers\HomeController::class, 'messages'])->name('messages');
+Route::get('/message', [App\Http\Controllers\HomeController::class, 'message'])->name('message');
